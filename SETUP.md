@@ -38,15 +38,15 @@ NAME_CN = "陈凡"
 HANDLE = "C6oisini"
 LABEL = "PALM LAB"
 SCHOOL = "SOUTHEAST UNIVERSITY"
-TAGLINE = "Systems · AI Infrastructure · Agents"
+TAGLINE = "Reinforcement Learning · Agents · LLM Systems"
 MOTTO = "Mens et Manus"
 LOCATION = "NANJING · CN"
 CLASS_OF = "2029"
 
 DOMAINS = [
-    ("01", "LLM SERVING", "inference · batching · KV cache"),
-    ("02", "AI INFRA", "training systems · data · tooling"),
-    ("03", "AGENT SYSTEMS", "tool loops · skill reuse · evaluation"),
+    ("01", "RL & TEST-TIME", "reinforcement learning · test-time training"),
+    ("02", "AGENT SYSTEMS", "tool loops · skill reuse · evaluation"),
+    ("03", "LLM SERVING", "inference · batching · KV cache"),
 ]
 ```
 
@@ -70,7 +70,7 @@ python3 make_hero.py
 - 顶部用 `<picture>` + `prefers-color-scheme` 自动切换亮/暗两张 SVG，路径是相对仓库根目录的 `./assets/...`。
 - 徽章颜色 `b83c12` 对应 SVG 里的朱红，`17130d` 对应墨色；换配色时一起改。
 - 中文 / English 两个锚点分别对应 `## 中文` 和 `## English`，改标题时同步改链接。
-- 邮箱在 README 里出现两次（徽章 + 文字链接），改的时候一起改。
+- 邮箱在 README 里出现三次（徽章 + 中英文文字链接），改的时候一起改。
 
 ## 发布
 
