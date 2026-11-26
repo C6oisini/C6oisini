@@ -10,8 +10,8 @@ Edit the variables below, then run:
     python3 make_hero.py
 
 Outputs:
-    assets/hero-light.svg
-    assets/hero-dark.svg
+    assets/hero-light-v2.svg
+    assets/hero-dark-v2.svg
 """
 
 from pathlib import Path
@@ -26,6 +26,7 @@ TAGLINE = "Reinforcement Learning · Agents · Ad & LLM Systems"
 MOTTO = "Mens et Manus"
 LOCATION = "NANJING · CN"
 CLASS_OF = "2029"
+ASSET_VERSION = "v2"  # bump when the SVG content changes, so Camo refetches
 
 # Right-hand index: number, title, one-line note
 DOMAINS = [
@@ -214,7 +215,7 @@ def hero(p: dict) -> str:
 
 def main() -> None:
     for mode, palette in PALETTES.items():
-        path = ASSETS / f"hero-{mode}.svg"
+        path = ASSETS / f"hero-{mode}-{ASSET_VERSION}.svg"
         path.write_text(hero(palette), encoding="utf-8")
         print(f"wrote {path}")
 

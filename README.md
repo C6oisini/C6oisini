@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg?v=3">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg?v=3">
-    <img src="./assets/hero-light.svg?v=3" alt="ChenFan (CliiFord) — Reinforcement Learning, Agents, Ad &amp; LLM Systems" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark-v2.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light-v2.svg">
+    <img src="./assets/hero-light-v2.svg" alt="ChenFan (CliiFord) — Reinforcement Learning, Agents, Ad &amp; LLM Systems" width="100%">
   </picture>
 </p>
 

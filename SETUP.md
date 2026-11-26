@@ -5,7 +5,7 @@
 | 你看到的部分 | 实际来源 |
 | --- | --- |
 | 头像、名字、学校、邮箱、关注数 | GitHub 个人资料设置，不是 README |
-| 大字名字、索引栏、字母章 | `assets/hero-light.svg` / `hero-dark.svg` |
+| 大字名字、索引栏、字母章 | `assets/hero-light-v2.svg` / `hero-dark-v2.svg` |
 | followers / profile views / email 小徽章 | Shields.io、komarev.com 动态图片 |
 | 成就徽章（YOLO、Pull Shark 等） | GitHub 自动发放，不能自己加 |
 
@@ -19,8 +19,8 @@ C6oisini/
 ├── SETUP.md
 ├── make_hero.py
 ├── assets/
-│   ├── hero-light.svg
-│   └── hero-dark.svg
+│   ├── hero-light-v2.svg
+│   └── hero-dark-v2.svg
 ├── preview-light.png
 └── preview-dark.png
 ```
@@ -41,6 +41,7 @@ TAGLINE = "Reinforcement Learning · Agents · Ad & LLM Systems"
 MOTTO = "Mens et Manus"
 LOCATION = "NANJING · CN"
 CLASS_OF = "2029"
+ASSET_VERSION = "v2"  # bump when the SVG changes, then update README paths
 
 DOMAINS = [
     ("01", "RL & TEST-TIME", "reinforcement learning · test-time training"),
@@ -55,7 +56,7 @@ DOMAINS = [
 python3 make_hero.py
 ```
 
-会重新生成 `assets/hero-light.svg` 和 `assets/hero-dark.svg`。脚本只用 Python 标准库，不需要装依赖。
+会重新生成 `assets/hero-light-v2.svg` 和 `assets/hero-dark-v2.svg`。文件名里的 `v2` 来自 `ASSET_VERSION`；改图后把它递增，并同步改 README 里的路径。脚本只用 Python 标准库，不需要装依赖。
 
 - **名字太长**：把 `font-size="132"` 改小，例如 `110`，再重新生成。
 - **换配色**：改 `PALETTES` 里的 `paper`、`ink`、`muted`、`accent`、`accent_ink`。
@@ -106,16 +107,16 @@ git push
 路径必须和实际文件名大小写一致：
 
 ```html
-<img src="./assets/hero-light.svg" alt="...">
+<img src="./assets/hero-light-v2.svg" alt="...">
 ```
 
 **改了图但主页还是旧图？**
 
-GitHub 的图片走 Camo 缓存，通常几分钟，偶尔更久。可以换文件名（例如 `hero-light-v2.svg`），或在 README 的图片路径后加 `?v=N`（每次更新把 N 递增）并同步改 `<source>` 和 `<img>`，立即绕过缓存。
+GitHub 的图片走 Camo 缓存，通常几分钟，偶尔更久。最稳的做法是换文件名：把 `make_hero.py` 里的 `ASSET_VERSION`（现在是 `v2`）改成 `v3`，重新生成，再把 README 里两处 `hero-*-v2.svg` 改成 `hero-*-v3.svg`。临时也可以在图路径后加 `?v=N`（每次更新把 N 递增）并同步改 `<source>` 和 `<img>`。
 
 **亮色/暗色怎么自动切换？**
 
-`<picture>` + `prefers-color-scheme`，GitHub 会根据当前主题选择 `hero-light.svg` 或 `hero-dark.svg`。
+`<picture>` + `prefers-color-scheme`，GitHub 会根据当前主题选择 `hero-light-v2.svg` 或 `hero-dark-v2.svg`。
 
 **为什么不能直接写 CSS？**
 
