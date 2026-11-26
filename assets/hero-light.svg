@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520"
+     viewBox="0 0 1600 520" fill="none" role="img"
+     aria-label="陈凡 Chen Fan — Systems · AI Infrastructure · Agents">
+  <title>陈凡 Chen Fan — Systems · AI Infrastructure · Agents</title>
+
+  <!-- 纸面 -->
+  <rect width="1600" height="520" fill="#f3eee3"/>
+  <line x1="0" y1="96" x2="1600" y2="96" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="128" x2="1600" y2="128" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="160" x2="1600" y2="160" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="192" x2="1600" y2="192" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="224" x2="1600" y2="224" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="256" x2="1600" y2="256" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="288" x2="1600" y2="288" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="320" x2="1600" y2="320" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="352" x2="1600" y2="352" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="384" x2="1600" y2="384" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="416" x2="1600" y2="416" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="448" x2="1600" y2="448" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="480" x2="1600" y2="480" stroke="#17130d" stroke-opacity="0.030"/><line x1="0" y1="512" x2="1600" y2="512" stroke="#17130d" stroke-opacity="0.030"/>
+
+  <!-- 页眉 -->
+  <rect x="64" y="42" width="9" height="9" fill="#b83c12"/>
+  <text x="86" y="54" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" letter-spacing="3.4"
+        fill="#6b6252">PROFILE / 001</text>
+  <text x="1536" y="54" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15"
+        letter-spacing="2.6" fill="#6b6252">NANJING · CN</text>
+  <line x1="64" y1="72" x2="1536" y2="72"
+        stroke="#17130d" stroke-opacity="0.16"/>
+
+  <!-- 左侧：名字 -->
+  <text x="64" y="146" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" font-weight="600"
+        letter-spacing="2.2" fill="#b83c12">陈凡 · SOUTHEAST UNIVERSITY / PALM LAB</text>
+  <text x="61" y="292" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Songti SC', 'Noto Serif SC', Georgia, 'Times New Roman', serif" font-size="132" font-weight="700"
+        letter-spacing="-3.5" fill="#17130d">Chen Fan<tspan fill="#b83c12">.</tspan></text>
+  <line x1="64" y1="332" x2="820" y2="332"
+        stroke="#17130d" stroke-opacity="0.16"/>
+  <text x="64" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="30" font-weight="500"
+        fill="#17130d">Systems · AI Infrastructure · Agents</text>
+
+  <rect x="64" y="414" width="9" height="9" fill="#b83c12"/>
+  <text x="86" y="426" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Songti SC', 'Noto Serif SC', Georgia, 'Times New Roman', serif" font-size="24" font-style="italic"
+        fill="#6b6252">Mens et Manus</text>
+  <text x="64" y="486" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" letter-spacing="1.6"
+        fill="#99907d">NANJING · MSC SOFTWARE ENGINEERING · CLASS OF 2029</text>
+
+  <!-- 中间竖线 -->
+  <line x1="944" y1="92" x2="944" y2="452"
+        stroke="#17130d" stroke-opacity="0.16"/>
+  <line x1="942.5" y1="92" x2="942.5" y2="160"
+        stroke="#b83c12" stroke-width="3"/>
+
+  <!-- 右侧：索引 -->
+  <text x="984" y="150" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" letter-spacing="2.6"
+        fill="#6b6252">SELECTED DOMAINS / 03</text>
+  <text x="984" y="212" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="600" letter-spacing="1.4" fill="#b83c12">01</text><text x="1032" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="28" font-weight="800" letter-spacing="0.8" fill="#17130d">LLM SERVING</text><text x="1032" y="239" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#6b6252">inference · batching · KV cache</text><line x1="984" y1="257" x2="1536" y2="257" stroke="#17130d" stroke-opacity="0.16"/><text x="984" y="284" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="600" letter-spacing="1.4" fill="#b83c12">02</text><text x="1032" y="284" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="28" font-weight="800" letter-spacing="0.8" fill="#17130d">AI INFRA</text><text x="1032" y="311" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#6b6252">training systems · data · tooling</text><line x1="984" y1="329" x2="1536" y2="329" stroke="#17130d" stroke-opacity="0.16"/><text x="984" y="356" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="600" letter-spacing="1.4" fill="#b83c12">03</text><text x="1032" y="356" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="28" font-weight="800" letter-spacing="0.8" fill="#17130d">AGENT SYSTEMS</text><text x="1032" y="383" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#6b6252">tool loops · skill reuse · evaluation</text><line x1="984" y1="401" x2="1536" y2="401" stroke="#17130d" stroke-opacity="0.16"/>
+
+  <text x="984" y="448" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Songti SC', 'Noto Serif SC', Georgia, 'Times New Roman', serif" font-size="19" font-style="italic"
+        fill="#6b6252">Taking complex systems apart,</text>
+  <text x="984" y="474" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Songti SC', 'Noto Serif SC', Georgia, 'Times New Roman', serif" font-size="19" font-style="italic"
+        fill="#6b6252">and putting them back together.</text>
+
+  <!-- 姓名章 -->
+  <g>
+    <rect x="1438" y="92" width="92" height="92" fill="#b83c12"/>
+    <rect x="1446" y="100" width="76" height="76" fill="none"
+          stroke="#fbf6ea" stroke-opacity="0.55" stroke-width="1.2"/>
+    <text x="1484" y="152" text-anchor="middle" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Songti SC', 'Noto Serif SC', Georgia, 'Times New Roman', serif"
+          font-size="38" font-weight="700" letter-spacing="2"
+          fill="#fbf6ea">陈凡</text>
+  </g>
+
+  <!-- 裁切标记 -->
+  <path d="M25 34H43M34 25V43" stroke="#b83c12" stroke-opacity="0.50" stroke-width="1.2"/><path d="M1557 34H1575M1566 25V43" stroke="#b83c12" stroke-opacity="0.50" stroke-width="1.2"/><path d="M25 496H43M34 487V505" stroke="#b83c12" stroke-opacity="0.50" stroke-width="1.2"/><path d="M1557 496H1575M1566 487V505" stroke="#b83c12" stroke-opacity="0.50" stroke-width="1.2"/>
+
+  <!-- 页脚 -->
+  <text x="64" y="512" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="2.4"
+        fill="#99907d" opacity="0.85">FIG. 01 — PROFILE OF C6OISINI</text>
+</svg>
