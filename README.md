@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg?v=2">
-    <img src="./assets/hero-light.svg?v=2" alt="Chen Fan — Reinforcement Learning, Agents, Ad &amp; LLM Systems" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg?v=3">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg?v=3">
+    <img src="./assets/hero-light.svg?v=3" alt="ChenFan (CliiFord) — Reinforcement Learning, Agents, Ad &amp; LLM Systems" width="100%">
   </picture>
 </p>
 
@@ -20,45 +20,21 @@
   <code>Reinforcement Learning</code>&nbsp; <code>Agent Systems</code>&nbsp; <code>Ad Algorithms &amp; Infra</code>
 </p>
 
-<p align="center">
-  <a href="#中文">中文</a> · <a href="#english">English</a>
-</p>
-
 ---
 
-## 中文
+## Hello, world
 
-### 你好，世界
-
-我是**陈凡**（Chen Fan），东南大学软件工程硕士在读，在 **PALM 实验室**做 Reinforcement Learning 与 Agent 方向的研究。
+I'm **ChenFan (CliiFord)**, a master's student in software engineering at **Southeast University**, working on reinforcement learning and agent systems in the **PALM Lab**.
 
 > Mens et Manus.
 
-### 我在做什么
-
-- **研究**：视觉语言模型 · Agent 系统 · Reinforcement Learning · Test-Time Training
-- **工程**：广告算法模型与基础设施 · Agent 工具循环
-- **经历**：字节跳动 Pangle 算法实习（2026.03–2026.09）
-
-### 找到我
-
-[Email](mailto:C6oisini@gmail.com) · [GitHub](https://github.com/C6oisini)
-
-## English
-
-### Hello, world
-
-I'm **Fan Chen** (陈凡), a master's student in software engineering at **Southeast University**, working on reinforcement learning and agent systems in the **PALM Lab**.
-
-> Mens et Manus.
-
-### What I work on
+## What I work on
 
 - **Research** — vision-language models, agent systems, reinforcement learning, test-time training
 - **Engineering** — ad algorithm modeling and infrastructure, agent tool loops
 - **Previously** — algorithm intern at ByteDance Pangle (2026.03–2026.09)
 
-### Find me
+## Find me
 
 [Email](mailto:C6oisini@gmail.com) · [GitHub](https://github.com/C6oisini)
 

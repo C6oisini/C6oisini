@@ -1,16 +1,15 @@
 # Hero 图与主页维护
 
-这个仓库就是 GitHub 个人主页仓库（仓库名 = 用户名 `C6oisini`）。主页顶部的 hero 图是两张提前画好的 SVG，由 `make_hero.py` 生成；README 只负责引用它们。
+这个仓库就是 GitHub 个人主页仓库（仓库名 = 用户名 `C6oisini`）。README 里的显示名是 `ChenFan (CliiFord)`；`CliiFord` 是显示别名，GitHub 账号和仓库仍然是 `C6oisini`。主页顶部的 hero 图是两张提前画好的 SVG，由 `make_hero.py` 生成；README 只负责引用它们。
 
 | 你看到的部分 | 实际来源 |
 | --- | --- |
 | 头像、名字、学校、邮箱、关注数 | GitHub 个人资料设置，不是 README |
-| 大字名字、索引栏、姓名章 | `assets/hero-light.svg` / `hero-dark.svg` |
+| 大字名字、索引栏、字母章 | `assets/hero-light.svg` / `hero-dark.svg` |
 | followers / profile views / email 小徽章 | Shields.io、komarev.com 动态图片 |
 | 成就徽章（YOLO、Pull Shark 等） | GitHub 自动发放，不能自己加 |
-| 中文 · English 跳转 | README 里的页内锚点 |
 
-README 不支持 CSS 和 JavaScript，所以那张“纸面海报”不是网页，而是一张 SVG 图片。风格是编辑排版 / 印刷品：纸面底色、衬线大字、朱红姓名章、细线索引，没有渐变、发光和玻璃卡片。
+README 不支持 CSS 和 JavaScript，所以那张“纸面海报”不是网页，而是一张 SVG 图片。风格是编辑排版 / 印刷品：纸面底色、衬线大字、朱红字母章、细线索引，没有渐变、发光和玻璃卡片。
 
 ## 文件结构
 
@@ -30,12 +29,12 @@ C6oisini/
 
 ## 改 hero 图
 
-头图里的名字、用户名、标语不在 `README.md` 里，而在 `make_hero.py` 顶部的变量里：
+头图里的名字、别名、标语不在 `README.md` 里，而在 `make_hero.py` 顶部的变量里：
 
 ```python
-NAME = "Chen Fan"
-NAME_CN = "陈凡"
-HANDLE = "C6oisini"
+NAME = "ChenFan"
+ALIAS = "CliiFord"
+MONOGRAM = "CF"
 LABEL = "PALM LAB"
 SCHOOL = "SOUTHEAST UNIVERSITY"
 TAGLINE = "Reinforcement Learning · Agents · Ad & LLM Systems"
@@ -63,14 +62,14 @@ python3 make_hero.py
 - **加/减方向**：改 `DOMAINS`，同时把右侧 `SELECTED DOMAINS / 03` 里的 `03` 改成实际条数。
 - **看效果**：直接用浏览器打开 SVG，或看 `preview-*.png`。
 
-版式是固定坐标（1600×520）：左侧名字与标语，中间竖线，右侧三条索引，右上角朱红姓名章，四角裁切标记。改长文本时注意别越过 x=944 的竖线。
+版式是固定坐标（1600×520）：左侧名字与标语，中间竖线，右侧三条索引，右上角朱红字母章，四角裁切标记。改长文本时注意别越过 x=944 的竖线。
 
 ## 改 README
 
 - 顶部用 `<picture>` + `prefers-color-scheme` 自动切换亮/暗两张 SVG，路径是相对仓库根目录的 `./assets/...`。
 - 徽章颜色 `b83c12` 对应 SVG 里的朱红，`17130d` 对应墨色；换配色时一起改。
-- 中文 / English 两个锚点分别对应 `## 中文` 和 `## English`，改标题时同步改链接。
-- 邮箱在 README 里出现三次（徽章 + 中英文文字链接），改的时候一起改。
+- README 现在是纯英文，没有语言切换锚点；hero 里的姓名也已经是 `ChenFan` / `CliiFord`，没有中文。改文案时不要再加中文段落。
+- 邮箱在 README 里出现两次（徽章 + `Find me` 文字链接），改的时候一起改。
 
 ## 发布
 
@@ -112,7 +111,7 @@ git push
 
 **改了图但主页还是旧图？**
 
-GitHub 的图片走 Camo 缓存，通常几分钟，偶尔更久。可以换文件名（例如 `hero-light-v2.svg`），或在 README 的图片路径后加 `?v=2`（每次更新递增）并同步改 `<source>` 和 `<img>`，立即绕过缓存。
+GitHub 的图片走 Camo 缓存，通常几分钟，偶尔更久。可以换文件名（例如 `hero-light-v2.svg`），或在 README 的图片路径后加 `?v=N`（每次更新把 N 递增）并同步改 `<source>` 和 `<img>`，立即绕过缓存。
 
 **亮色/暗色怎么自动切换？**
 
@@ -122,12 +121,12 @@ GitHub 的图片走 Camo 缓存，通常几分钟，偶尔更久。可以换文�
 
 GitHub 会过滤 README 里的 `<style>`、`<script>` 和大部分 `style` 属性。想要复杂排版，就把排版画进 SVG / PNG，再当普通图片引用。
 
-**中文/English 跳转不灵？**
+**README 为什么没有中文？**
 
-链接是 `#中文` 和 `#english`，对应两个二级标题；改了标题文字，锚点也要跟着改。
+现在是纯英文 README；hero 里的姓名也改成了 `ChenFan` / `CliiFord`，不再出现中文名。改文案时不要再加中文段落。
 
 ## 设计说明
 
-- 字体走系统字体栈：衬线用 Iowan Old Style / Palatino / Songti SC / Georgia，无衬线用系统 UI 字体，等宽用 SF Mono / Menlo。不加载外部字体，GitHub 上也不会因为字体请求失败而变形。
+- 字体走系统字体栈：衬线用 Iowan Old Style / Palatino / Georgia，无衬线用系统 UI 字体，等宽用 SF Mono / Menlo。不加载外部字体，GitHub 上也不会因为字体请求失败而变形。
 - 没有位图、没有外部资源，SVG 单文件约 8 KB，任意缩放都清晰。
 - 1600×520 在 GitHub 的约 880 px 正文宽度下会缩到一半左右，所以主标题用 132 px，最小字号保持在 12–15 px。

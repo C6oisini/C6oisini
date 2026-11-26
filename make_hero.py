@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
 """
-生成 README 顶部的 hero 图（亮色 + 暗色各一份）。
+Generate the hero image for the README (light + dark).
 
-风格：编辑排版 / 印刷品 —— 纸面底色、衬线大字、朱红姓名章、细线索引。
-不使用渐变、发光和玻璃卡片，整张图由纯色、细线和小字号等宽字构成。
+Style: editorial print — paper stock, large serif name, vermilion monogram,
+thin index rules. No gradients, glows, or glass cards; flat color, hairlines,
+and small mono type only.
 
-改下面这段变量，然后运行：
+Edit the variables below, then run:
     python3 make_hero.py
 
-输出：
+Outputs:
     assets/hero-light.svg
     assets/hero-dark.svg
 """
 
 from pathlib import Path
 
-# ----------------------------- 只改这里 ---------------------------------
-NAME = "Chen Fan"
-NAME_CN = "陈凡"
-HANDLE = "C6oisini"
+# ----------------------------- edit here ---------------------------------
+NAME = "ChenFan"
+ALIAS = "CliiFord"
+MONOGRAM = "CF"
 LABEL = "PALM LAB"
 SCHOOL = "SOUTHEAST UNIVERSITY"
 TAGLINE = "Reinforcement Learning · Agents · Ad & LLM Systems"
@@ -26,25 +27,25 @@ MOTTO = "Mens et Manus"
 LOCATION = "NANJING · CN"
 CLASS_OF = "2029"
 
-# 右侧索引：编号、标题、一行小注
+# Right-hand index: number, title, one-line note
 DOMAINS = [
     ("01", "RL & TEST-TIME", "reinforcement learning · test-time training"),
     ("02", "AGENT SYSTEMS", "tool loops · skill reuse · evaluation"),
     ("03", "AD ALGORITHMS & INFRA", "ranking · LTV · multi-domain transfer"),
 ]
-# -----------------------------------------------------------------------
+# -------------------------------------------------------------------------
 
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
 ASSETS.mkdir(exist_ok=True)
 
 SERIF = (
-    "'Iowan Old Style', 'Palatino Linotype', Palatino, 'Songti SC', "
-    "'Noto Serif SC', Georgia, 'Times New Roman', serif"
+    "'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, "
+    "'Times New Roman', serif"
 )
 SANS = (
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', "
-    "'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif"
+    "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, "
+    "sans-serif"
 )
 MONO = (
     "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, "
@@ -90,8 +91,9 @@ def esc(text: str) -> str:
 
 def hero(p: dict) -> str:
     name = esc(NAME)
-    name_cn = esc(NAME_CN)
-    handle = esc(HANDLE)
+    alias = esc(ALIAS)
+    alias_upper = esc(ALIAS.upper())
+    monogram = esc(MONOGRAM)
     label = esc(LABEL)
     school = esc(SCHOOL)
     tagline = esc(TAGLINE)
@@ -99,7 +101,7 @@ def hero(p: dict) -> str:
     location = esc(LOCATION)
     class_of = esc(CLASS_OF)
 
-    # 纸面横线：很淡的印刷格线
+    # Paper rules: a very faint print grid
     grid = []
     for y in range(96, 521, 32):
         grid.append(
@@ -107,7 +109,7 @@ def hero(p: dict) -> str:
             f'stroke="{p["ink"]}" stroke-opacity="{p["grid_opacity"]}"/>'
         )
 
-    # 四角裁切标记
+    # Four corner crop marks
     marks = []
     for x, y in ((34, 34), (1566, 34), (34, 496), (1566, 496)):
         marks.append(
@@ -116,7 +118,7 @@ def hero(p: dict) -> str:
             f'stroke-width="1.2"/>'
         )
 
-    # 右侧索引行
+    # Right-hand index rows
     rows = []
     y = 212
     for num, title, note in DOMAINS:
@@ -142,14 +144,14 @@ def hero(p: dict) -> str:
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520"
      viewBox="0 0 1600 520" fill="none" role="img"
-     aria-label="{name_cn} {name} — {tagline}">
-  <title>{name_cn} {name} — {tagline}</title>
+     aria-label="{name} ({alias}) — {tagline}">
+  <title>{name} ({alias}) — {tagline}</title>
 
-  <!-- 纸面 -->
+  <!-- paper -->
   <rect width="1600" height="520" fill="{p["paper"]}"/>
   {''.join(grid)}
 
-  <!-- 页眉 -->
+  <!-- header -->
   <rect x="64" y="42" width="9" height="9" fill="{p["accent"]}"/>
   <text x="86" y="54" font-family="{MONO}" font-size="15" letter-spacing="3.4"
         fill="{p["muted"]}">PROFILE / 001</text>
@@ -158,9 +160,9 @@ def hero(p: dict) -> str:
   <line x1="64" y1="72" x2="1536" y2="72"
         stroke="{p["ink"]}" stroke-opacity="{p["rule_opacity"]}"/>
 
-  <!-- 左侧：名字 -->
+  <!-- left: name -->
   <text x="64" y="146" font-family="{MONO}" font-size="16" font-weight="600"
-        letter-spacing="2.2" fill="{p["accent"]}">{name_cn} · {school} / {label}</text>
+        letter-spacing="2.2" fill="{p["accent"]}">{alias_upper} · {school} / {label}</text>
   <text x="61" y="292" font-family="{SERIF}" font-size="132" font-weight="700"
         letter-spacing="-3.5" fill="{p["ink"]}">{name}<tspan fill="{p["accent"]}">.</tspan></text>
   <line x1="64" y1="332" x2="820" y2="332"
@@ -174,13 +176,13 @@ def hero(p: dict) -> str:
   <text x="64" y="486" font-family="{MONO}" font-size="13.5" letter-spacing="1.6"
         fill="{p["faint"]}">NANJING · MSC SOFTWARE ENGINEERING · CLASS OF {class_of}</text>
 
-  <!-- 中间竖线 -->
+  <!-- center rule -->
   <line x1="944" y1="92" x2="944" y2="452"
         stroke="{p["ink"]}" stroke-opacity="{p["rule_opacity"]}"/>
   <line x1="942.5" y1="92" x2="942.5" y2="160"
         stroke="{p["accent"]}" stroke-width="3"/>
 
-  <!-- 右侧：索引 -->
+  <!-- right: index -->
   <text x="984" y="150" font-family="{MONO}" font-size="15" letter-spacing="2.6"
         fill="{p["muted"]}">SELECTED DOMAINS / 03</text>
   {''.join(rows)}
@@ -190,22 +192,22 @@ def hero(p: dict) -> str:
   <text x="984" y="474" font-family="{SERIF}" font-size="19" font-style="italic"
         fill="{p["muted"]}">and putting them back together.</text>
 
-  <!-- 姓名章 -->
+  <!-- monogram seal -->
   <g>
     <rect x="1438" y="92" width="92" height="92" fill="{p["accent"]}"/>
     <rect x="1446" y="100" width="76" height="76" fill="none"
           stroke="{p["accent_ink"]}" stroke-opacity="0.55" stroke-width="1.2"/>
     <text x="1484" y="152" text-anchor="middle" font-family="{SERIF}"
           font-size="38" font-weight="700" letter-spacing="2"
-          fill="{p["accent_ink"]}">{name_cn}</text>
+          fill="{p["accent_ink"]}">{monogram}</text>
   </g>
 
-  <!-- 裁切标记 -->
+  <!-- crop marks -->
   {''.join(marks)}
 
-  <!-- 页脚 -->
+  <!-- footer -->
   <text x="64" y="512" font-family="{MONO}" font-size="12" letter-spacing="2.4"
-        fill="{p["faint"]}" opacity="0.85">FIG. 01 — PROFILE OF {handle.upper()}</text>
+        fill="{p["faint"]}" opacity="0.85">FIG. 01 — PROFILE OF {alias_upper}</text>
 </svg>
 '''
 
