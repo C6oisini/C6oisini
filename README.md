@@ -22,19 +22,29 @@
 
 ---
 
-## Hello, world
+## 👋 Hello, world
 
 I'm **ChenFan (CliiFord)**, a master's student in software engineering at **Southeast University**, working on reinforcement learning and agent systems in the **PALM Lab**.
 
 > Mens et Manus.
 
-## What I work on
+## 🧭 What I work on
 
 - **Research** — vision-language models, agent systems, reinforcement learning, test-time training
 - **Engineering** — ad algorithm modeling and infrastructure, agent tool loops
-- **Previously** — algorithm intern at ByteDance Pangle (2026.03–2026.09)
 
-## Find me
+## 💼 Internship
+
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/bytedance-dark.svg">
+    <img src="./assets/bytedance-light.svg" alt="ByteDance" height="22">
+  </picture>
+  &nbsp; <strong>ByteDance · Pangle</strong> — Algorithm Intern<br>
+  <sub>Mar 2026 – Sep 2026 · ranking, LTV, and multi-domain transfer for game ads</sub>
+</p>
+
+## 📬 Find me
 
 [Email](mailto:C6oisini@gmail.com) · [GitHub](https://github.com/C6oisini)
 

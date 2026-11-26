@@ -19,6 +19,8 @@ C6oisini/
 ├── SETUP.md
 ├── make_hero.py
 ├── assets/
+│   ├── bytedance-dark.svg
+│   ├── bytedance-light.svg
 │   ├── hero-light-v2.svg
 │   └── hero-dark-v2.svg
 ├── preview-light.png
@@ -26,6 +28,8 @@ C6oisini/
 ```
 
 `preview-*.png` 只是本地预览，README 不引用，可以删。
+
+`bytedance-*.svg` 是 README 实习区用的 ByteDance 字标，来自 Wikimedia Commons 的 `File:ByteDance logo English.svg`；深色版只把字标改成米白，彩色条保留。商标归 ByteDance 所有，这里仅用于标识实习经历。
 
 ## 改 hero 图
 
