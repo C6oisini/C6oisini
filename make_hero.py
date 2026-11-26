@@ -21,7 +21,7 @@ NAME_CN = "陈凡"
 HANDLE = "C6oisini"
 LABEL = "PALM LAB"
 SCHOOL = "SOUTHEAST UNIVERSITY"
-TAGLINE = "Reinforcement Learning · Agents · LLM Systems"
+TAGLINE = "Reinforcement Learning · Agents · Ad & LLM Systems"
 MOTTO = "Mens et Manus"
 LOCATION = "NANJING · CN"
 CLASS_OF = "2029"
@@ -30,7 +30,7 @@ CLASS_OF = "2029"
 DOMAINS = [
     ("01", "RL & TEST-TIME", "reinforcement learning · test-time training"),
     ("02", "AGENT SYSTEMS", "tool loops · skill reuse · evaluation"),
-    ("03", "LLM SERVING", "inference · batching · KV cache"),
+    ("03", "AD ALGORITHMS & INFRA", "ranking · LTV · multi-domain transfer"),
 ]
 # -----------------------------------------------------------------------
 

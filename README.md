@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-    <img src="./assets/hero-light.svg" alt="Chen Fan — Reinforcement Learning, Agents, LLM Systems" width="100%">
+    <img src="./assets/hero-light.svg" alt="Chen Fan — Reinforcement Learning, Agents, Ad &amp; LLM Systems" width="100%">
   </picture>
 </p>
 
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <code>Reinforcement Learning</code>&nbsp; <code>Agent Systems</code>&nbsp; <code>LLM Serving</code>
+  <code>Reinforcement Learning</code>&nbsp; <code>Agent Systems</code>&nbsp; <code>Ad Algorithms &amp; Infra</code>
 </p>
 
 <p align="center">
@@ -37,7 +37,7 @@
 ### 我在做什么
 
 - **研究**：视觉语言模型 · Agent 系统 · Reinforcement Learning · Test-Time Training
-- **工程**：LLM 推理与服务 · 广告算法基础设施 · Agent 工具循环
+- **工程**：广告算法模型与基础设施 · Agent 工具循环
 - **经历**：字节跳动 Pangle 算法实习（2026.03–2026.09）
 
 ### 找到我
@@ -55,7 +55,7 @@ I'm **Fan Chen** (陈凡), a master's student in software engineering at **South
 ### What I work on
 
 - **Research** — vision-language models, agent systems, reinforcement learning, test-time training
-- **Engineering** — LLM inference and serving, advertising algorithm infrastructure, agent tool loops
+- **Engineering** — ad algorithm modeling and infrastructure, agent tool loops
 - **Previously** — algorithm intern at ByteDance Pangle (2026.03–2026.09)
 
 ### Find me
