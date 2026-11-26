@@ -40,8 +40,8 @@ I'm **ChenFan (CliiFord)**, a master's student in software engineering at **Sout
     <source media="(prefers-color-scheme: dark)" srcset="./assets/bytedance-dark.svg">
     <img src="./assets/bytedance-light.svg" alt="ByteDance" height="22">
   </picture>
-  &nbsp; <strong>Pangle</strong> — Algorithm Intern<br>
-  <sub>ByteDance's ad platform · Mar 2026 – Sep 2026 · ranking, LTV, and multi-domain transfer</sub>
+  &nbsp; <strong>Global Monetization Product &amp; Technology</strong> · Pangle Algorithm<br>
+  <sub>Algorithm Intern · Mar 2026 – Sep 2026 · ranking, LTV, and multi-domain transfer</sub>
 </p>
 
 ## 📬 Find me
